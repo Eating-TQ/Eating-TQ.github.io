@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sweet Skura: Home</title>
+<link href="style_sakura.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Boogaloo" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="material/icon.ico" media="screen" />
+</head>
+
+
+
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"><img id="loader_img" src="material/loader.png" width="72" height="72" alt=""/></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+
+
+
+
+
+	<div class="comeing_soon">
+	<h1 class="come_soon">COMING SOON</h1>
+	<a href="main_menu.html"><p class="come_soon_buttom">Go Back To Main Menu</p></a>
+	</div>
+
+
+
+</div><!--clos the loader div -->
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>
